@@ -2,6 +2,7 @@
     position: absolute;
     top: 0;
     z-index: 9000;
+    color: black;
   }
 .navbar-toggler {
     z-index: 1;
@@ -13,7 +14,7 @@
     bottom: 0;
     width: 100%;
     padding-top: 4.5rem;
-    background-color: #fff;
+    background-color: gray;
     z-index: 0;
     opacity: 0;
     visibility: hidden;
@@ -24,7 +25,7 @@
     visibility: visible;
 }
 .overlay {
-    /* position: fixed; */
+    position: fixed;
     top: 0;
     left: 0;
     right: 0;
@@ -43,7 +44,6 @@
 
 .container {
     justify-content: center;
-    margin: 0;
 }
 
 .container img {
@@ -56,7 +56,7 @@
 }
 
 .image-container {
-    position: relative;
+    /* position: relative; */
     z-index: 0;
   }
   
@@ -76,13 +76,22 @@
 }
 
 .text-container2 p {
-    font-size: 16;
+    font-size: 12pt;
 }
 
 @media (min-width: 768px) {
+
+    .navbar-collapse {
+        opacity: 1;
+        visibility: visible;
+        position: static;
+        padding-top: 0;
+        background-color: transparent;
+        }
+
     .container img {
         width: 100%;
-        margin: 15%;
+        /* margin: 15%; */
     }
     
     #left-btn, #right-btn {
@@ -107,7 +116,8 @@
     }
     
     .text-container2 {
-        padding: 15%;
+        padding: 5%;
+        height: 100%;
     }
     
     .abouttext p {
@@ -117,5 +127,10 @@
     .abouttext h4 {
         padding-top: 5%;
         text-align: center;
+    }
+
+    .img-fluid {
+        height: 100%;
+        width: 100%;
     }
 }
