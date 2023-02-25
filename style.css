@@ -1,0 +1,121 @@
+.navbar {
+    position: absolute;
+    top: 0;
+    z-index: 9000;
+  }
+.navbar-toggler {
+    z-index: 1;
+}
+.navbar-collapse {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    padding-top: 4.5rem;
+    background-color: #fff;
+    z-index: 0;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+.navbar-collapse.show {
+    opacity: 1;
+    visibility: visible;
+}
+.overlay {
+    /* position: fixed; */
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.9);
+    z-index: 5;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+.overlay.show {
+    opacity: 1;
+    visibility: visible;
+    z-index: 20;
+}
+
+.container {
+    justify-content: center;
+    margin: 0;
+}
+
+.container img {
+    width: 100%;
+}
+
+#left-btn, #right-btn {
+    background-color: black;
+    padding: 15px;
+}
+
+.image-container {
+    position: relative;
+    z-index: 0;
+  }
+  
+.button-container {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+  
+.text-container {
+    width: 100%;
+    padding: 10%;
+}
+
+.text-container2 {
+    padding: 10%;
+}
+
+.text-container2 p {
+    font-size: 16;
+}
+
+@media (min-width: 768px) {
+    .container img {
+        width: 100%;
+        margin: 15%;
+    }
+    
+    #left-btn, #right-btn {
+        background-color: black;
+        padding: 15px;
+    }
+    
+    .image-container {
+        position: relative;
+        z-index: 0;
+      }
+      
+    .button-container {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+    }
+      
+    .text-container {
+        width: 100%;
+        padding: 5%;
+    }
+    
+    .text-container2 {
+        padding: 15%;
+    }
+    
+    .abouttext p {
+        padding: 10%;
+    }
+    
+    .abouttext h4 {
+        padding-top: 5%;
+        text-align: center;
+    }
+}
