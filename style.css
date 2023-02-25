@@ -63,7 +63,7 @@
 .button-container {
     position: absolute;
     bottom: 0;
-    right: 0;
+    right: -20px;
 }
   
 .text-container {
@@ -77,6 +77,11 @@
 
 .text-container2 p {
     font-size: 12pt;
+}
+
+.attribution {
+    margin-top: 20px;
+    text-align: center;
 }
 
 @media (min-width: 768px) {
@@ -107,7 +112,7 @@
     .button-container {
         position: absolute;
         bottom: 0;
-        right: 0;
+        right: 0px;
     }
       
     .text-container {
@@ -132,5 +137,9 @@
     .img-fluid {
         height: 100%;
         width: 100%;
+    }
+
+    .container {
+        margin-top: 5%;
     }
 }
